@@ -69,7 +69,6 @@ bodybuilderGirthMenu = ReplyKeyboardMarkup(
             KeyboardButton(text="Обхват бицепса"),
             KeyboardButton(text="Обхват chлеNa"),
         ],
-        [KeyboardButton(text="Обхват ZaлуpI")],
         [KeyboardButton(text="Назад")],
     ],
     resize_keyboard=True,
@@ -96,3 +95,11 @@ bodybuilderCalculationsMenu = ReplyKeyboardMarkup(
     one_time_keyboard=True,
     input_field_placeholder="Различные расчеты для вашего тела",
 )
+
+# Тренировки
+    trainingMainMenu = ReplyKe
+# Питание
+
+# Обзор
+
+# AI-помощник
