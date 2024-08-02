@@ -14,7 +14,6 @@ import random
 load_dotenv()
 bot = Bot(os.getenv("TOKEN"), default=DefaultBotProperties(parse_mode=ParseMode.HTML))  # type: ignore
 
-
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
     await hrs.dp.start_polling(bot)

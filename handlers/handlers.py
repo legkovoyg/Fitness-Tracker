@@ -77,28 +77,29 @@ async def call_bodybuilder_calculations(message: Message):
     )
 
 
-# # Тренировки
-# @dp.message(F.text == "Тренировки")
-# async def rand(message: Message):
-#     await message.answer(f"Рандомное число: {random.randint(1000, 10000)}")
+# Тренировки
+@dp.message(F.text == "Тренировки")
+async def rand(message: Message):
+    await message.answer(
+        "Выберите действие:", reply_markup=kb.bodybuilderCalculationsMenu
+    )
 
 
-# # Питание
-# @dp.message(F.text == "Питание")
-# async def rand(message: Message):
-#     await message.answer(f"Рандомное число: {random.randint(1000, 10000)}")
+# Питание
+@dp.message(F.text == "Питание")
+async def rand(message: Message):
+    await message.answer(f"Рандомное число: {random.randint(1000, 10000)}")
 
 
-# # Саммари
-# @dp.message(F.text == "Саммари")
-# async def rand(message: Message):
-#     await message.answer(f"Рандомное число: {random.randint(1000, 10000)}")
+# Саммари
+@dp.message(F.text == "Обзор")
+async def rand(message: Message):
+    await message.answer(f"Сайт с обзором сохраненных данных находится в стадии разработки")
 
-
-# # AI-помощник
-# @dp.message(F.text == "AI-помощник")
-# async def rand(message: Message):
-#     await message.answer(f"Рандомное число: {random.randint(1000, 10000)}")
+# AI-помощник
+@dp.message(F.text == "AI-помощник")
+async def rand(message: Message):
+    await message.answer(f"AI-помощник находится в стадии разработки")
 
 
 @dp.message(F.text == "Bubna")
